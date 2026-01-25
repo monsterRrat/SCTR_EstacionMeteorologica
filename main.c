@@ -92,17 +92,17 @@ enum event {
 
 void print_temp(temp, oled)
 {
-	ssd1306_draw_string(&oled, 0, 0, 1, "Hola"); ;
+	ssd1306_draw_string(&oled, 0, 0, 1, "temp"); ;
 }
 
 void print_hum(hum, oled)
 {
-	ssd1306_draw_string(&oled, 0, 0, 1, "Hola"); ;
+	ssd1306_draw_string(&oled, 0, 0, 1, "hum"); ;
 }
 
 void print_co2(co2, oled)
 {
-	ssd1306_draw_string(&oled, 0, 0, 1, "Hola"); ;
+	ssd1306_draw_string(&oled, 0, 0, 1, "co2"); ;
 }
 
 
