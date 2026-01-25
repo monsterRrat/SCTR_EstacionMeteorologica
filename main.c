@@ -148,7 +148,16 @@ int main(void)
     struct datos datos_sensor;
     struct datos *p_datos = NULL;
     p_datos = &datos_sensor;
-	DHT20_init()
+	
+    DHT20 sensor;
+    int status = DHT20_init(&sensor);
+
+    if (status == DHT20_OK) {
+        printf("DHT20 inicializado correctamente.\n");
+    } else {
+        printf("Error al inicializar DHT20: %d\n", status);
+        break
+    }
     sgp30_handle_t sgp30;
     sgp30.iic_init      = sgp30_iic_init;
     sgp30.iic_deinit    = NULL;              
