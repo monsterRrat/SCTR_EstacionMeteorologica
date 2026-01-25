@@ -11,8 +11,9 @@ Características principales
 - Código modular y fácil de extender.
 
 ```mermaid
-FSM-v2
-    Temperatura --> Humedad :tiempo
-    Humedad --> CO2 : tiempo
-    CO2 --> Temperatura : tiempo
+stateDiagram-v2
+    direction TB
+    Temp --> Hum : tiempo
+    Hum --> CO2 : tiempo
+    CO2 --> Temp : tiempo
 ```
