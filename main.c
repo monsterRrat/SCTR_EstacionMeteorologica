@@ -76,6 +76,7 @@ int tiempoUnix() {
 };
 
 
+/*Estados del sistema*/
 enum state {
 	TEMP = 0,
 	HUMEDAD,
@@ -83,6 +84,8 @@ enum state {
 	STATE_MAX
 };
 
+/*Eventos de entrada del sistema
+  None representa una entrada irrelevante*/
 enum event {
 	NONE = 0,
 	TIEMPO,
@@ -105,8 +108,9 @@ void print_co2(co2, oled)
 	ssd1306_draw_string(&oled, 0, 0, 1, "co2"); ;
 }
 
-
-enum state trans_temp(datos *p_datos, oled)
+/* Manejador de transición (transition handler)
+   Funciones asociadas a las transiciones*/
+enum state trans_temp(void)
 {
 	print_temp(p_datos->temp);
 	return TEMP;
@@ -126,16 +130,18 @@ enum state trans_co2(datos *p_datos, oled)
 
 enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
 	[TEMP] = {
-		[TIEMPO] = trans_humedad
+		[TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
 	},
 	[HUM] = {
-		[TIEMPO] = trans_co2
+		[TIEMPO] = trans_co2     /*Despues de la cte. de tiempo, pasas de hum a CO2*/
 	},
     [CO2] = {
-		[TIEMPO] = trans_temp
+		[TIEMPO] = trans_temp    /*Despues de la cte. de tiempo, pasas de CO2 a temp*/
 	},
 };
 
+/* Parseador de eventos: mundo real → evento 
+   Permite interactuar con la máquina de estados desde el exterior*/
 enum event event_parser(int ch)
 {
 	if (ch%5 == 0)
