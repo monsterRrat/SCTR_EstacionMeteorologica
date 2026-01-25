@@ -12,9 +12,10 @@ Características principales
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Reposo
-    Reposo --> Procesando: Evio de datos
-    Procesando --> Reposo: Finalizado
-    Procesando --> Error: Fallo
-    Error --> [*]
+    [*] --> Temperatura
+
+    Temperatura --> Humedad :tiempo
+    Humedad --> CO2 : tiempo
+    CO2 --> Temperarura : tiempo
+    
 ```
