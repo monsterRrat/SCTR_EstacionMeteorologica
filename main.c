@@ -1,6 +1,27 @@
 #include <stdio.h>
 #include <time.h>
+#include <math.h>
+#include <DHT20.h>
+#include <sgp30.h>
 
+DHT20 sensor1
+
+struct datos {
+	float temp;
+	float hum;
+	uint16_t co2;
+};
+
+
+
+void getSensor1(p_datos, sensor) {
+    updateMeasurement(&sensor);
+
+    float t = getTemperature(&sensor);
+    float h = getHumidity(&sensor);
+    p_datos->temp = t
+    p_datos->hum = h
+};
 
 int tiempoUnix() {
     int time_t segundos = time(NULL);
@@ -79,13 +100,18 @@ enum event event_parser(int ch)
 int main(void)
 {
 	DHT20_init()
-    printf("LED: 0=apaga, 1=enciende\n");
+    sgp30_handle_t sgp30;
+    uint16_t tvoc;
+    sgp30_init(&sgp30);
+    sgp30_iaq_init(&sgp30);
+
 	print_temp();
 	enum state st = TEMP;
 
 	for (;;) {
 
-	
+        sgp30_read(&sgp30, p_datos->co2, &tvoc);
+        getSensor1
 		int ch = tiempoUnix();
 		enum event ev = event_parser(ch);
 		enum state (*tr)(void) = trans_table[st][ev];
