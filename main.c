@@ -3,6 +3,7 @@
 #include <math.h>
 #include <DHT20.h>
 #include <sgp30.h>
+#include <ssd1306.h>
 
 typedef struct
 {
@@ -89,41 +90,41 @@ enum event {
 };
 
 
-void print_temp(temp)
+void print_temp(temp, oled)
 {
-	printf("LED: ON\n");
+	ssd1306_draw_string(&oled, 0, 0, 1, "Hola"); ;
 }
 
-void print_hum(hum)
+void print_hum(hum, oled)
 {
-	printf("LED: OFF\n");
+	ssd1306_draw_string(&oled, 0, 0, 1, "Hola"); ;
 }
 
-void print_co2(co2)
+void print_co2(co2, oled)
 {
-	printf("LED: OFF\n");
+	ssd1306_draw_string(&oled, 0, 0, 1, "Hola"); ;
 }
 
 
-enum state trans_temp(datos *p_datos)
+enum state trans_temp(datos *p_datos, oled)
 {
 	print_temp(p_datos->temp);
 	return TEMP;
 }
 
-enum state trans_humedad(datos *p_datos)
+enum state trans_humedad(datos *p_datos, oled)
 {
 	print_hum(p_datos->hum);
 	return HUMEDAD;
 }
 
-enum state trans_co2(datos *p_datos)
+enum state trans_co2(datos *p_datos, oled)
 {
 	print_hum(p_datos->co2);
 	return CO2;
 }
 
-enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos) = {
+enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
 	[TEMP] = {
 		[TIEMPO] = trans_humedad
 	},
@@ -149,6 +150,17 @@ int main(void)
     struct datos *p_datos = NULL;
     p_datos = &datos_sensor;
 	
+    i2c_init(i2c0, 400 * 1000); 
+    gpio_set_function(4, GPIO_FUNC_I2C); 
+    gpio_set_function(5, GPIO_FUNC_I2C); 
+    gpio_pull_up(4);
+    gpio_pull_up(5);
+
+    ssd1306_t oled;
+    if (!ssd1306_init(&oled, 128, 64, 0x3C, i2c0)) {
+        printf("Error inicializando la pantalla!\n");
+        return 1
+    }
     DHT20 sensor;
     int status = DHT20_init(&sensor);
 
@@ -156,7 +168,7 @@ int main(void)
         printf("DHT20 inicializado correctamente.\n");
     } else {
         printf("Error al inicializar DHT20: %d\n", status);
-        break
+        return 1
     }
     sgp30_handle_t sgp30;
     sgp30.iic_init      = sgp30_iic_init;
@@ -181,7 +193,7 @@ int main(void)
 
 		int ch = tiempoUnix();
 		enum event ev = event_parser(ch);
-		enum state (*tr)(datos*) = trans_table[st][ev];
+		enum state (*tr)(datos*, oled) = trans_table[st][ev];
 
 		if (tr == NULL) { 
 			printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);
