@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# CMake configuration for the Pico TempSense project
+# Clear, minimal, and kernel-style formatting.
+
+cmake_minimum_required(VERSION 3.13)
+
+# Import Raspberry Pi Pico SDK
+include(pico_sdk_import.cmake)
+
+# Project name
+project(meteorologic_station)
+
+# Initialize Pico SDK
+pico_sdk_init()
+
+# Define executable target and its source file(s)
+add_executable(meteorologic_station
+    meteorologic_station.c
+)
+
+# Link required libraries:
+# - pico_stdlib   : Standard SDK functions (I/O, timing, etc.)
+# - hardware_adc  : Access to onboard ADC, including temperature sensor
+target_link_libraries(meteorologic_station
+    pico_stdlib
+    hardware_gpio
+    hardware_uart
+    hardware_adc
+)
+
+# Enable USB output, disable UART
+pico_enable_stdio_usb(meteorologic_station 1)
+pico_enable_stdio_uart(meteorologic_station 0)
+
+# Generate map/bin/hex/uf2 files
+pico_add_extra_outputs(meteorologic_station)
