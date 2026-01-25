@@ -9,3 +9,12 @@ Características principales
 - Intervalos de medición ajustables.
 - Visualización clara de los datos en una pantalla.
 - Código modular y fácil de extender.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Reposo
+    Reposo --> Procesando: Evio de datos
+    Procesando --> Reposo: Finalizado
+    Procesando --> Error: Fallo
+    Error --> [*]
+```
