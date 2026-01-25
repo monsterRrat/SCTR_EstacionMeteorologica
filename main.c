@@ -41,14 +41,6 @@ uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
 void sgp30_delay_ms(uint32_t ms)
 {
     sleep_ms(ms);
-}
-
-DHT20 sensor1
-
-struct datos {
-	float temp;
-	float hum;
-	uint16_t co2;
 };
 
 uint16_t calculate_absolute_humidity(float temperature, float humidity)
@@ -60,7 +52,13 @@ uint16_t calculate_absolute_humidity(float temperature, float humidity)
     AH = (216.7f * E) / (273.15f + temperature);
 
     return (uint16_t)(AH * 256.0f);
-}
+};
+
+typedef struct {
+	float temp;
+	float hum;
+	uint16_t co2;
+} datos;
 
 void getSensor1(p_datos, sensor) {
     updateMeasurement(&sensor);
@@ -91,41 +89,41 @@ enum event {
 };
 
 
-void print_temp(void)
+void print_temp(temp)
 {
 	printf("LED: ON\n");
 }
 
-void print_hum(void)
+void print_hum(hum)
 {
 	printf("LED: OFF\n");
 }
 
-void print_co2(void)
+void print_co2(co2)
 {
 	printf("LED: OFF\n");
 }
 
 
-enum state trans_temp(void)
+enum state trans_temp(datos *p_datos)
 {
-	print_temp();
+	print_temp(p_datos->temp);
 	return TEMP;
 }
 
-enum state trans_humedad(void)
+enum state trans_humedad(datos *p_datos)
 {
-	print_hum();
+	print_hum(p_datos->hum);
 	return HUMEDAD;
 }
 
-enum state trans_co2(void)
+enum state trans_co2(datos *p_datos)
 {
-	print_hum();
+	print_hum(p_datos->co2);
 	return CO2;
 }
 
-enum state (*trans_table[STATE_MAX][EVENT_MAX])(void) = {
+enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos) = {
 	[TEMP] = {
 		[TIEMPO] = trans_humedad
 	},
@@ -147,6 +145,9 @@ enum event event_parser(int ch)
 
 int main(void)
 {
+    struct datos datos_sensor;
+    struct datos *p_datos = NULL;
+    p_datos = &datos_sensor;
 	DHT20_init()
     sgp30_handle_t sgp30;
     sgp30.iic_init      = sgp30_iic_init;
@@ -164,14 +165,14 @@ int main(void)
 	for (;;) {
 
         sgp30_read(&sgp30, p_datos->co2, &tvoc);
-        getSensor1
-        uint16_t ah = calculate_absolute_humidity(t, h);
+        getSensor1(p_datos,sensor);
+        uint16_t ah = calculate_absolute_humidity(p_datos->temp, p_datos->hum);
         sgp30_set_absolute_humidity(&sgp30, ah);
         sgp30_read(&sgp30, p_datos->co2, &tvoc);
 
 		int ch = tiempoUnix();
 		enum event ev = event_parser(ch);
-		enum state (*tr)(void) = trans_table[st][ev];
+		enum state (*tr)(datos*) = trans_table[st][ev];
 
 		if (tr == NULL) { 
 			printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);
