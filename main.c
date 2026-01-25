@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <time.h>
 
+
 int tiempoUnix() {
-    time_t segundos = time(NULL);
-
-    printf("Tiempo Unix actual: %ld\n", (long)segundos);
-
+    int time_t segundos = time(NULL);
     return segundos;
-}
+};
+
 
 enum state {
 	TEMP = 0,
@@ -22,7 +21,7 @@ enum event {
 	EVENT_MAX
 };
 
-/* Acciones */
+
 void print_temp(void)
 {
 	printf("LED: ON\n");
@@ -38,7 +37,7 @@ void print_co2(void)
 	printf("LED: OFF\n");
 }
 
-/* Manejador de transición (transition handler)*/
+
 enum state trans_temp(void)
 {
 	print_temp();
@@ -56,7 +55,7 @@ enum state trans_co2(void)
 	print_hum();
 	return CO2;
 }
-/* Tabla de transición: apunta a handlers concretos */
+
 enum state (*trans_table[STATE_MAX][EVENT_MAX])(void) = {
 	[TEMP] = {
 		[TIEMPO] = trans_humedad
@@ -69,7 +68,6 @@ enum state (*trans_table[STATE_MAX][EVENT_MAX])(void) = {
 	},
 };
 
-/* Parseador de eventos: mundo real → evento */
 enum event event_parser(int ch)
 {
 	if (ch%5 == 0)
@@ -80,16 +78,15 @@ enum event event_parser(int ch)
 
 int main(void)
 {
-	printf("LED: 0=apaga, 1=enciende\n");
+	DHT20_init()
+    printf("LED: 0=apaga, 1=enciende\n");
 	print_temp();
 	enum state st = TEMP;
 
 	for (;;) {
 
-		/* Espera comentarios de teclado */
+	
 		int ch = tiempoUnix();
-
-
 		enum event ev = event_parser(ch);
 		enum state (*tr)(void) = trans_table[st][ev];
 
