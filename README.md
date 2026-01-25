@@ -12,6 +12,7 @@ Características principales
 
 ```mermaid
 stateDiagram-v2
+<<<<<<< HEAD
     [*] --> Temperatura
 
     Temperatura --> Humedad :tiempo
@@ -19,3 +20,11 @@ stateDiagram-v2
     CO2 --> Temperarura : tiempo
     
 ```
+=======
+    [*] --> Reposo
+    Reposo --> Procesando: Evio de datos
+    Procesando --> Reposo: Finalizado
+    Procesando --> Error: Fallo
+    Error --> [*]
+```
+>>>>>>> 182e04a994f566e9bd4c3196d39b063a1dee62aa
