@@ -1,14 +1,80 @@
 #include <stdio.h>
 #include <time.h>
+#include <math.h>
+#include <DHT20.h>
+#include <sgp30.h>
+#include <ssd1306.h>
+
+typedef struct
+{
+    uint8_t inited;
+
+    uint8_t (*iic_init)(void);
+    uint8_t (*iic_deinit)(void);
+    uint8_t (*iic_read_cmd)(uint8_t addr, uint8_t *buf, uint16_t len);
+    uint8_t (*iic_write_cmd)(uint8_t addr, uint8_t *buf, uint16_t len);
+
+    void (*delay_ms)(uint32_t ms);
+    void (*debug_print)(const char *fmt, ...);
+
+} sgp30_handle_t;
+uint8_t sgp30_iic_init(void)
+{
+    i2c_init(i2c0, 100 * 1000);
+    gpio_set_function(4, GPIO_FUNC_I2C);
+    gpio_set_function(5, GPIO_FUNC_I2C);
+    gpio_pull_up(4);
+    gpio_pull_up(5);
+    return 0;
+}
+uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
+{
+    if (i2c_write_blocking(i2c0, addr, buf, len, false) < 0)
+        return 1;
+    return 0;
+}
+uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
+{
+    if (i2c_read_blocking(i2c0, addr, buf, len, false) < 0)
+        return 1;
+    return 0;
+}
+void sgp30_delay_ms(uint32_t ms)
+{
+    sleep_ms(ms);
+};
+
+uint16_t calculate_absolute_humidity(float temperature, float humidity)
+{
+    float Es, E, AH;
+    
+    Es = 6.112f * expf((17.62f * temperature) / (243.12f + temperature));
+    E  = (humidity / 100.0f) * Es;
+    AH = (216.7f * E) / (273.15f + temperature);
+
+    return (uint16_t)(AH * 256.0f);
+};
+
+typedef struct {
+	float temp;
+	float hum;
+	uint16_t co2;
+} datos;
+
+void getSensor1(p_datos, sensor) {
+    updateMeasurement(&sensor);
+
+    float t = getTemperature(&sensor);
+    float h = getHumidity(&sensor);
+    p_datos->temp = t
+    p_datos->hum = h
+};
 
 int tiempoUnix() {
-	/*Obtener el instante de tiempo actual*/
-    time_t segundos = time(NULL);
-	/*Imprimir la marca de tiempo actual*/
-    printf("Tiempo Unix actual: %ld\n", (long)segundos);
-
+    int time_t segundos = time(NULL);
     return segundos;
-}
+};
+
 
 /*Estados del sistema*/
 enum state {
@@ -26,43 +92,43 @@ enum event {
 	EVENT_MAX
 };
 
-/* Acciones */
-void print_temp(void)
+
+void print_temp(temp, oled)
 {
-	printf("LED: ON\n");
+	ssd1306_draw_string(&oled, 0, 0, 1, "temp"); ;
 }
 
-void print_hum(void)
+void print_hum(hum, oled)
 {
-	printf("LED: OFF\n");
+	ssd1306_draw_string(&oled, 0, 0, 1, "hum"); ;
 }
 
-void print_co2(void)
+void print_co2(co2, oled)
 {
-	printf("LED: OFF\n");
+	ssd1306_draw_string(&oled, 0, 0, 1, "co2"); ;
 }
 
 /* Manejador de transición (transition handler)
    Funciones asociadas a las transiciones*/
 enum state trans_temp(void)
 {
-	print_temp();
+	print_temp(p_datos->temp);
 	return TEMP;
 }
 
-enum state trans_humedad(void)
+enum state trans_humedad(datos *p_datos, oled)
 {
-	print_hum();
+	print_hum(p_datos->hum);
 	return HUMEDAD;
 }
 
-enum state trans_co2(void)
+enum state trans_co2(datos *p_datos, oled)
 {
-	print_hum();
+	print_hum(p_datos->co2);
 	return CO2;
 }
-/* Tabla de transición: apunta a handlers concretos */
-enum state (*trans_table[STATE_MAX][EVENT_MAX])(void) = {
+
+enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
 	[TEMP] = {
 		[TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
 	},
@@ -86,18 +152,54 @@ enum event event_parser(int ch)
 
 int main(void)
 {
-	/*Estado inicial*/
-	printf("LED: 0=apaga, 1=enciende\n");
+    struct datos datos_sensor;
+    struct datos *p_datos = NULL;
+    p_datos = &datos_sensor;
+	
+    i2c_init(i2c0, 400 * 1000); 
+    gpio_set_function(4, GPIO_FUNC_I2C); 
+    gpio_set_function(5, GPIO_FUNC_I2C); 
+    gpio_pull_up(4);
+    gpio_pull_up(5);
+
+    ssd1306_t oled;
+    if (!ssd1306_init(&oled, 128, 64, 0x3C, i2c0)) {
+        printf("Error inicializando la pantalla!\n");
+        return 1
+    }
+    DHT20 sensor;
+    int status = DHT20_init(&sensor);
+
+    if (status == DHT20_OK) {
+        printf("DHT20 inicializado correctamente.\n");
+    } else {
+        printf("Error al inicializar DHT20: %d\n", status);
+        return 1
+    }
+    sgp30_handle_t sgp30;
+    sgp30.iic_init      = sgp30_iic_init;
+    sgp30.iic_deinit    = NULL;              
+    sgp30.iic_read_cmd  = sgp30_iic_read_cmd;
+    sgp30.iic_write_cmd = sgp30_iic_write_cmd;
+    sgp30.delay_ms      = sgp30_delay_ms;
+    sgp30.debug_print   = NULL;
+    sgp30_init(&sgp30);
+    sgp30_iaq_init(&sgp30);
+    
 	print_temp();
 	enum state st = TEMP;
 
 	for (;;) {
 
-		/* Espera comentarios de teclado */
-		int ch = tiempoUnix();
+        sgp30_read(&sgp30, p_datos->co2, &tvoc);
+        getSensor1(p_datos,sensor);
+        uint16_t ah = calculate_absolute_humidity(p_datos->temp, p_datos->hum);
+        sgp30_set_absolute_humidity(&sgp30, ah);
+        sgp30_read(&sgp30, p_datos->co2, &tvoc);
 
+		int ch = tiempoUnix();
 		enum event ev = event_parser(ch);
-		enum state (*tr)(void) = trans_table[st][ev];
+		enum state (*tr)(datos*, oled) = trans_table[st][ev];
 
 		if (tr == NULL) { 
 			printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);
