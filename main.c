@@ -132,7 +132,7 @@ enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
 	[TEMP] = {
 		[TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
 	},
-	[HUM] = {
+	[HUMEDAD] = {
 		[TIEMPO] = trans_co2     /*Despues de la cte. de tiempo, pasas de hum a CO2*/
 	},
     [CO2] = {
