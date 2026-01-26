@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.15)
+
+# Definir el nombre del proyecto y el nombre del ejecutable
+set(PROJECT_NAME "SCTR_EstacionMeteorologica")
+set(EXECUTABLE_NAME "dht20-pico")
+
+include(pico_sdk_import.cmake)
+
+project(${PROJECT_NAME}
+	LANGUAGES CXX C ASM
+)
+
+pico_sdk_init()
+
+# Añadir el ejecutable y sus archivos fuente
+add_executable(${EXECUTABLE_NAME}
+    DHT20/DHT20.c  # Ruta a los archivos de la librería DHT22
+)
+
+# Enlazar las bibliotecas necesarias
+target_link_libraries(${EXECUTABLE_NAME}
+    pico_stdlib          # Librería estándar de Pico
+)
+
+
+# Habilitar/Deshabilitar la salida por USB y UART
+pico_enable_stdio_usb(${EXECUTABLE_NAME} 1)
+pico_enable_stdio_uart(${EXECUTABLE_NAME} 0)
+
+# Añadir salidas adicionales (binario, map, hex, uf2)
+pico_add_extra_outputs(${EXECUTABLE_NAME})
