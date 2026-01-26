@@ -18,42 +18,17 @@ typedef struct
     void (*debug_print)(const char *fmt, ...);
 
 } sgp30_handle_t;
+
 uint8_t sgp30_iic_init(void)
-{
-    i2c_init(i2c0, 100 * 1000);
-    gpio_set_function(4, GPIO_FUNC_I2C);
-    gpio_set_function(5, GPIO_FUNC_I2C);
-    gpio_pull_up(4);
-    gpio_pull_up(5);
-    return 0;
-}
+
 uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
-{
-    if (i2c_write_blocking(i2c0, addr, buf, len, false) < 0)
-        return 1;
-    return 0;
-}
+
 uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
-{
-    if (i2c_read_blocking(i2c0, addr, buf, len, false) < 0)
-        return 1;
-    return 0;
-}
+
 void sgp30_delay_ms(uint32_t ms)
-{
-    sleep_ms(ms);
-};
 
 uint16_t calculate_absolute_humidity(float temperature, float humidity)
-{
-    float Es, E, AH;
-    
-    Es = 6.112f * expf((17.62f * temperature) / (243.12f + temperature));
-    E  = (humidity / 100.0f) * Es;
-    AH = (216.7f * E) / (273.15f + temperature);
 
-    return (uint16_t)(AH * 256.0f);
-};
 
 typedef struct {
 	float temp;
@@ -61,19 +36,9 @@ typedef struct {
 	uint16_t co2;
 } datos;
 
-void getSensor1(p_datos, sensor) {
-    updateMeasurement(&sensor);
+void getSensor1(p_datos, sensor)
 
-    float t = getTemperature(&sensor);
-    float h = getHumidity(&sensor);
-    p_datos->temp = t
-    p_datos->hum = h
-};
-
-int tiempoUnix() {
-    int time_t segundos = time(NULL);
-    return segundos;
-};
+time_t tiempoUnix(void) { return time(NULL); }
 
 
 /*Estados del sistema*/
@@ -92,7 +57,11 @@ enum event {
 	EVENT_MAX
 };
 
-
+/* Acciones.
+ * Funciones que dan pie a la lectura de sensores
+ * Se desacoplan de los estados para tener máxima flexibilidad
+ * en su uso.
+ */
 void print_temp(temp, oled)
 {
 	ssd1306_draw_string(&oled, 0, 0, 1, "temp"); ;
@@ -128,6 +97,7 @@ enum state trans_co2(datos *p_datos, oled)
 	return CO2;
 }
 
+/* Tabla de transición*/
 enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
 	[TEMP] = {
 		[TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
@@ -210,3 +180,52 @@ int main(void)
 
 	return 0;
 }
+
+uint8_t sgp30_iic_init(void)
+{
+    i2c_init(i2c0, 100 * 1000);
+    gpio_set_function(4, GPIO_FUNC_I2C);
+    gpio_set_function(5, GPIO_FUNC_I2C);
+    gpio_pull_up(4);
+    gpio_pull_up(5);
+    return 0;
+}
+
+uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
+{
+    if (i2c_write_blocking(i2c0, addr, buf, len, false) < 0)
+        return 1;
+    return 0;
+}
+
+uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
+{
+    if (i2c_read_blocking(i2c0, addr, buf, len, false) < 0)
+        return 1;
+    return 0;
+}
+
+void sgp30_delay_ms(uint32_t ms)
+{
+    sleep_ms(ms);
+};
+
+uint16_t calculate_absolute_humidity(float temperature, float humidity)
+{
+    float Es, E, AH;
+    
+    Es = 6.112f * expf((17.62f * temperature) / (243.12f + temperature));
+    E  = (humidity / 100.0f) * Es;
+    AH = (216.7f * E) / (273.15f + temperature);
+
+    return (uint16_t)(AH * 256.0f);
+};
+
+void getSensor1(p_datos, sensor) {
+    updateMeasurement(&sensor);
+
+    float t = getTemperature(&sensor);
+    float h = getHumidity(&sensor);
+    p_datos->temp = t
+    p_datos->hum = h
+};
