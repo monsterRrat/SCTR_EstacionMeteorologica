@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
+#include <pico/stdlib.h>
+#include <hardware/i2c.h>
 
-#include <DHT20/DHT20.h>
+#include "dht20/dht20.h"
 #include <sgp30/driver_sgp30.h>
 #include <ssd1306/ssd1306.h>
 
@@ -63,39 +65,50 @@ enum event {
  * Se desacoplan de los estados para tener máxima flexibilidad
  * en su uso.
  */
-void print_temp(float temp, ssd1306_t *oled)
-{
-    ssd1306_draw_string(oled, 0, 0, 1, "temp");
+
+static void oled_print_value(ssd1306_t* o, const char* label, const char* value) {
+    ssd1306_clear(o);
+    ssd1306_draw_string(o, 0, 0, 1, label);
+    ssd1306_draw_string(o, 0, 16, 2, value);
+    ssd1306_show(o);
 }
 
-void print_hum(float hum, ssd1306_t *oled)
-{
-    ssd1306_draw_string(oled, 0, 0, 1, "hum");
+
+static void print_temp(float temp, ssd1306_t* o) {
+    char buf[32];
+    snprintf(buf, sizeof buf, "%.1f C", temp);
+    oled_print_value(o, "TEMP", buf);
+}
+static void print_hum(float hum, ssd1306_t* o) {
+    char buf[32];
+    snprintf(buf, sizeof buf, "%.1f %%", hum);
+    oled_print_value(o, "HUMEDAD", buf);
+}
+static void print_co2(uint16_t co2, ssd1306_t* o) {
+    char buf[32];
+    snprintf(buf, sizeof buf, "%u ppm", co2);
+    oled_print_value(o, "CO2", buf);
 }
 
-void print_co2(uint16_t co2, ssd1306_t *oled)
-{
-    ssd1306_draw_string(oled, 0, 0, 1, "co2");
-}
 
 /* Manejador de transición (transition handler)
    Funciones asociadas a las transiciones*/
-enum state trans_temp(datos *p_datos, ssd1306_t *oled)
+enum state trans_temp(datos* p, ssd1306_t* o)
 {
-    print_temp(p_datos->temp, oled);
-    return TEMP;
+	print_temp(p->temp, o);
+	return TEMP;
 }
 
-enum state trans_humedad(datos *p_datos, ssd1306_t *oled)
+enum state trans_humedad(datos *p, ssd1306_t* o)
 {
-    print_hum(p_datos->hum, oled);
-    return HUMEDAD;
+	print_hum(p->hum, o);
+	return HUMEDAD;
 }
 
-enum state trans_co2(datos *p_datos, ssd1306_t *oled)
+enum state trans_co2(datos *p, ssd1306_t *o)
 {
-    print_co2(p_datos->co2, oled);
-    return CO2;
+	print_co2(p->co2, o);
+	return CO2;
 }
 
 /* Tabla de transición*/
@@ -161,22 +174,22 @@ int main(void)
 
     for (;;) {
 
-        getSensor1(p_datos, sensor);
+        sgp30_read(&sgp30, p_datos->co2, &tvoc);
+        getSensor1(p_datos,sensor);
         uint16_t ah = calculate_absolute_humidity(p_datos->temp, p_datos->hum);
         sgp30_set_absolute_humidity(&sgp30, ah);
-        uint16_t tvoc;
-        sgp30_read(&sgp30, &p_datos->co2, &tvoc);
+        sgp30_read(&sgp30, p_datos->co2, &tvoc);
 
-        int ch = tiempoUnix();
-        enum event ev = event_parser(ch);
-        enum state (*tr)(dados *p_datos, ssd1306_t *oled) = trans_table[st][ev];
+		int ch = tiempoUnix();
+		enum event ev = event_parser(ch);
+		enum state (*tr)(datos*, oled) = trans_table[st][ev];
 
-        if (tr == NULL) { 
-            printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);
-            continue;
-        }
-        st = tr(p_datos, &oled); 
-    }
+		if (tr == NULL) { 
+			printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);
+			continue;
+		}
+		st = tr(); 
+	}
 
 	return 0;
 }
