@@ -170,11 +170,11 @@ int main(void)
         getSensor1(p_datos,sensor);
         uint16_t ah = calculate_absolute_humidity(p_datos->temp, p_datos->hum);
         sgp30_set_absolute_humidity(&sgp30, ah);
-        sgp30_read(&sgp30, p_datos->co2, &tvoc);
+        sgp30_read(&sgp30, &p_datos->co2, &tvoc);
 
 		int ch = tiempoUnix();
 		enum event ev = event_parser(ch);
-		enum state (*tr)(datos*, oled) = trans_table[st][ev];
+		enum state (*tr)(p_datos, oled) = trans_table[st][ev];
 
 		if (tr == NULL) { 
 			printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);
