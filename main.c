@@ -12,11 +12,8 @@
 #include <sgp30/driver_sgp30.h>
 #include <ssd1306/ssd1306.h>
 
-typedef struct {
-	float temp;
-	float hum;
-	uint16_t co2;
-} datos;
+/* Prototipos de funcionesS */
+uint8_t iic_init(void);
 
 uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len);
 
@@ -31,6 +28,14 @@ void get_temp_hum(datos *p_datos, DHT20 sensor);
 time_t tiempoUnix(void) { return time(NULL); }
 
 static void oled_print_value(const char* label, const char* value);
+
+/* Estructura para almacenar los datos de los sensores */
+typedef struct {
+	float temp;
+	float hum;
+	uint16_t co2;
+} datos;
+
 
 /*Estados del sistema*/
 enum state {
@@ -120,15 +125,11 @@ int main(void)
     struct datos datos_sensores;
     struct datos *p_datos = NULL;
     p_datos = &datos_sensores;
-    enum state st = TEMP;
-    uint16_t tvoc = 0;
+    enum state st = TEMP; // Estado inicial
+    uint16_t tvoc = 0; // Variable para necesario SGP30
 	
     /* Inicialización del bus I2C */
-    i2c_init(i2c0, 400 * 1000); 
-    gpio_set_function(4, GPIO_FUNC_I2C); 
-    gpio_set_function(5, GPIO_FUNC_I2C); 
-    gpio_pull_up(4);
-    gpio_pull_up(5);
+    iic_init()
 
     /* Inicialización del sensor DHT20*/
     DHT20 sens_temp_hum;
@@ -143,7 +144,7 @@ int main(void)
 
     /* Inicialización del sensor SGP30 */
     sgp30_handle_t sgp30;
-    sgp30.iic_init      = 0;
+    sgp30.iic_init      = iic_init;
     sgp30.iic_deinit    = NULL;              
     sgp30.iic_read_cmd  = sgp30_iic_read_cmd;
     sgp30.iic_write_cmd = sgp30_iic_write_cmd;
@@ -173,6 +174,17 @@ int main(void)
 	return 0;
 }
 
+/* Funciones de comunicación I2C para SGP30 */
+uint8_t iic_init(void)
+{
+    i2c_init(i2c0, 400 * 1000); 
+    gpio_set_function(4, GPIO_FUNC_I2C); 
+    gpio_set_function(5, GPIO_FUNC_I2C); 
+    gpio_pull_up(4);
+    gpio_pull_up(5);
+    return 0;
+}
+
 uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
 {
     if (i2c_write_blocking(i2c0, addr, buf, len, false) < 0)
@@ -192,6 +204,7 @@ void sgp30_delay_ms(uint32_t ms)
     sleep_ms(ms);
 };
 
+/* Calcula la humedad absoluta en formato requerido por SGP30 */
 uint16_t calculate_absolute_humidity(float temperature, float humidity)
 {
     float Es, E, AH;
@@ -203,6 +216,7 @@ uint16_t calculate_absolute_humidity(float temperature, float humidity)
     return (uint16_t)(AH * 256.0f);
 };
 
+/* Obtiene temperatura y humedad del DHT20 */
 void get_temp_hum(datos *p_datos, DHT20 sensor) {
     updateMeasurement(&sensor);
 
@@ -212,6 +226,7 @@ void get_temp_hum(datos *p_datos, DHT20 sensor) {
     p_datos->hum = h;
 }
 
+/* Función para imprimir en OLED */
 static void oled_print_value(const char* label, const char* value) {
     memset(ssd, 0, ssd1306_buffer_length);
     ssd1306_draw_string(ssd, 5, 0, (char*)label);
