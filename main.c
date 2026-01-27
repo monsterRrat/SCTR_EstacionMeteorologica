@@ -240,4 +240,5 @@ static void oled_print_value(const char* label, const char* value) {
     ssd1306_draw_string(ssd, 5, 0, (char*)label);
     ssd1306_draw_string(ssd, 5, 16, (char*)value);
     render_on_display(ssd, &frame_area);
+    printf("%s: %s\n", label, value);
 }
