@@ -32,7 +32,7 @@ void getSensor1(datos *p_datos, DHT20 sensor);
 
 time_t tiempoUnix(void) { return time(NULL); }
 
-static void oled_print_value(ssd1306_t* o, const char* label, const char* value);
+static void oled_print_value(const char* label, const char* value);
 
 /*Estados del sistema*/
 enum state {
@@ -56,45 +56,45 @@ enum event {
  * en su uso.
  */
 
-static void print_temp(float temp, ssd1306_t* o) {
+static void print_temp(float temp,) {
     char buf[32];
     snprintf(buf, sizeof buf, "%.1f C", temp);
-    oled_print_value(o, "TEMP", buf);
+    oled_print_value("TEMP", buf);
 }
-static void print_hum(float hum, ssd1306_t* o) {
+static void print_hum(float hum) {
     char buf[32];
     snprintf(buf, sizeof buf, "%.1f %%", hum);
-    oled_print_value(o, "HUMEDAD", buf);
+    oled_print_value("HUMEDAD", buf);
 }
-static void print_co2(uint16_t co2, ssd1306_t* o) {
+static void print_co2(uint16_t co2) {
     char buf[32];
     snprintf(buf, sizeof buf, "%u ppm", co2);
-    oled_print_value(o, "CO2", buf);
+    oled_print_value("CO2", buf);
 }
 
 
 /* Manejador de transición (transition handler)
    Funciones asociadas a las transiciones*/
-enum state trans_temp(datos* p, ssd1306_t* o)
+enum state trans_temp(datos* p)
 {
-	print_temp(p->temp, o);
+	print_temp(p->temp);
 	return TEMP;
 }
 
-enum state trans_humedad(datos *p, ssd1306_t* o)
+enum state trans_humedad(datos *p)
 {
-	print_hum(p->hum, o);
+	print_hum(p->hum);
 	return HUMEDAD;
 }
 
-enum state trans_co2(datos *p, ssd1306_t *o)
+enum state trans_co2(datos *p)
 {
-	print_co2(p->co2, o);
+	print_co2(p->co2);
 	return CO2;
 }
 
 /* Tabla de transición*/
-enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, ssd1306_t *oled) = {
+enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos) = {
     [TEMP] = {
         [TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
     },
@@ -128,11 +128,7 @@ int main(void)
     gpio_pull_up(4);
     gpio_pull_up(5);
 
-    ssd1306_t oled;
-    if (!ssd1306_init(&oled, 128, 64, 0x3C, i2c0)) {
-        printf("Error inicializando la pantalla!\n");
-        return 1;
-    }
+  
     DHT20 sensor;
     int status = DHT20_init(&sensor);
 
@@ -225,9 +221,9 @@ void getSensor1(datos *p_datos, DHT20 sensor) {
     p_datos->hum = h;
 }
 
-static void oled_print_value(ssd1306_t* o, const char* label, const char* value) {
-    ssd1306_clear(o);
-    ssd1306_draw_string(o, 0, 0, 1, label);
-    ssd1306_draw_string(o, 0, 16, 2, value);
-    ssd1306_show(o);
+static void oled_print_value(const char* label, const char* value) {
+    memset(ssd, 0, ssd1306_buffer_length);
+    ssd1306_draw_string(ssd, 5, 0, (char*)label);
+    ssd1306_draw_string(ssd, 5, 16, (char*)value);
+    render_on_display(ssd, &frame_area);
 }
