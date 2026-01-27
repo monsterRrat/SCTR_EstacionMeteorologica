@@ -1,26 +1,19 @@
+/* Include standard headers */
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
-#include <pico/stdlib.h>
-#include <hardware/i2c.h>
+#include <stdint.h>
 
+/* Include driver headers */
 #include "dht20/dht20.h"
 #include <sgp30/driver_sgp30.h>
 #include <ssd1306/ssd1306.h>
 
-typedef struct
-{
-    uint8_t inited;
-
-    uint8_t (*iic_init)(void);
-    uint8_t (*iic_deinit)(void);
-    uint8_t (*iic_read_cmd)(uint8_t addr, uint8_t *buf, uint16_t len);
-    uint8_t (*iic_write_cmd)(uint8_t addr, uint8_t *buf, uint16_t len);
-
-    void (*delay_ms)(uint32_t ms);
-    void (*debug_print)(const char *fmt, ...);
-
-} sgp30_handle_t;
+typedef struct {
+	float temp;
+	float hum;
+	uint16_t co2;
+} datos;
 
 uint8_t sgp30_iic_init(void);
 
@@ -33,11 +26,7 @@ void sgp30_delay_ms(uint32_t ms);
 uint16_t calculate_absolute_humidity(float temperature, float humidity);
 
 
-typedef struct {
-	float temp;
-	float hum;
-	uint16_t co2;
-} datos;
+
 
 void getSensor1(datos *p_datos, DHT20 sensor);
 
@@ -72,7 +61,6 @@ static void oled_print_value(ssd1306_t* o, const char* label, const char* value)
     ssd1306_draw_string(o, 0, 16, 2, value);
     ssd1306_show(o);
 }
-
 
 static void print_temp(float temp, ssd1306_t* o) {
     char buf[32];
@@ -171,6 +159,7 @@ int main(void)
     sgp30_iaq_init(&sgp30);
     
     enum state st = TEMP;
+    uint16_t tvoc = 0;
 
     for (;;) {
 
