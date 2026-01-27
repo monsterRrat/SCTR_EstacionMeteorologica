@@ -3,7 +3,10 @@
 #include <time.h>
 #include <math.h>
 #include <stdint.h>
-
+/* Include Pico SDK headers */
+#include "pico/stdlib.h"
+#include "hardware/i2c.h"
+#include "hardware/gpio.h"
 /* Include driver headers */
 #include "DHT20/DHT20.h"
 #include <sgp30/driver_sgp30.h>
@@ -52,8 +55,6 @@ enum event {
  * Se desacoplan de los estados para tener máxima flexibilidad
  * en su uso.
  */
-
-
 
 static void print_temp(float temp, ssd1306_t* o) {
     char buf[32];
