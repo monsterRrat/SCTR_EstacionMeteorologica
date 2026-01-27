@@ -18,8 +18,6 @@ typedef struct {
 	uint16_t co2;
 } datos;
 
-uint8_t sgp30_iic_init(void);
-
 uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len);
 
 uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len);
@@ -139,7 +137,7 @@ int main(void)
         return 1;
     }
     sgp30_handle_t sgp30;
-    sgp30.iic_init      = sgp30_iic_init;
+    sgp30.iic_init      = 0;
     sgp30.iic_deinit    = NULL;              
     sgp30.iic_read_cmd  = sgp30_iic_read_cmd;
     sgp30.iic_write_cmd = sgp30_iic_write_cmd;
@@ -170,16 +168,6 @@ int main(void)
 	}
 
 	return 0;
-}
-
-uint8_t sgp30_iic_init(void)
-{
-    i2c_init(i2c0, 100 * 1000);
-    gpio_set_function(4, GPIO_FUNC_I2C);
-    gpio_set_function(5, GPIO_FUNC_I2C);
-    gpio_pull_up(4);
-    gpio_pull_up(5);
-    return 0;
 }
 
 uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
