@@ -5,7 +5,7 @@
 #include <stdint.h>
 
 /* Include driver headers */
-#include "dht20/dht20.h"
+#include "DHT20/DHT20.h"
 #include <sgp30/driver_sgp30.h>
 #include <ssd1306/ssd1306.h>
 
@@ -25,13 +25,11 @@ void sgp30_delay_ms(uint32_t ms);
 
 uint16_t calculate_absolute_humidity(float temperature, float humidity);
 
-
-
-
 void getSensor1(datos *p_datos, DHT20 sensor);
 
 time_t tiempoUnix(void) { return time(NULL); }
 
+static void oled_print_value(ssd1306_t* o, const char* label, const char* value);
 
 /*Estados del sistema*/
 enum state {
@@ -55,12 +53,7 @@ enum event {
  * en su uso.
  */
 
-static void oled_print_value(ssd1306_t* o, const char* label, const char* value) {
-    ssd1306_clear(o);
-    ssd1306_draw_string(o, 0, 0, 1, label);
-    ssd1306_draw_string(o, 0, 16, 2, value);
-    ssd1306_show(o);
-}
+
 
 static void print_temp(float temp, ssd1306_t* o) {
     char buf[32];
@@ -230,4 +223,11 @@ void getSensor1(datos *p_datos, DHT20 sensor) {
     float h = getHumidity(&sensor);
     p_datos->temp = t;
     p_datos->hum = h;
+}
+
+static void oled_print_value(ssd1306_t* o, const char* label, const char* value) {
+    ssd1306_clear(o);
+    ssd1306_draw_string(o, 0, 0, 1, label);
+    ssd1306_draw_string(o, 0, 16, 2, value);
+    ssd1306_show(o);
 }
