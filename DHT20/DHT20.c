@@ -3,7 +3,6 @@ Aosong AHT20/DHT20 sensor library for Raspberry Pi Pico.
 */
 
 #include <string.h>
-
 #include "DHT20.h"
 
 uint8_t readStatus(DHT20 *sens)

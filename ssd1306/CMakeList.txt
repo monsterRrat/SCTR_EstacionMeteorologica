@@ -12,7 +12,6 @@ pico_sdk_init()
 # Añadir el ejecutable para la pantalla SSD1306
 add_executable(ssd1306
     ssd1306.c
-    ssd1306_fonts.c
 )
 
 
