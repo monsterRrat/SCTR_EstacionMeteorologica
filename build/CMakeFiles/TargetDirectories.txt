@@ -1,6 +1,4 @@
 /home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir
-/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/picotoolForceReconfigure.dir
-/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/picotoolBuild.dir
 /home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/edit_cache.dir
 /home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/rebuild_cache.dir
 /home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/CMakeFiles/edit_cache.dir

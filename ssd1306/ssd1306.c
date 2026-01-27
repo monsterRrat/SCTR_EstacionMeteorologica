@@ -5,8 +5,8 @@
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
 #include "hardware/i2c.h"
-#include "drivers/oled/font.h"
-#include "drivers/oled/i2c.h"
+#include "font.h"
+#include "i2c.h"
 
 // Calcular quanto do buffer será destinado à área de renderização
 void calculate_render_area_buffer_length(struct render_area *area) {

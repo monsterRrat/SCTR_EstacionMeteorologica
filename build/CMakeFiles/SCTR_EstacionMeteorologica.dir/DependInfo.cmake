@@ -155,6 +155,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o.d"
+  "/home/efime/SCTR_EstacionMeteorologica/main.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o.d"
+  "/home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o.d"
+  "/home/efime/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d"

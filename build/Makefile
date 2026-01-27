@@ -130,32 +130,6 @@ SCTR_EstacionMeteorologica/fast:
 .PHONY : SCTR_EstacionMeteorologica/fast
 
 #=============================================================================
-# Target rules for targets named picotoolForceReconfigure
-
-# Build rule for target.
-picotoolForceReconfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
-.PHONY : picotoolForceReconfigure
-
-# fast build rule for target.
-picotoolForceReconfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/build
-.PHONY : picotoolForceReconfigure/fast
-
-#=============================================================================
-# Target rules for targets named picotoolBuild
-
-# Build rule for target.
-picotoolBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
-.PHONY : picotoolBuild
-
-# fast build rule for target.
-picotoolBuild/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/build
-.PHONY : picotoolBuild/fast
-
-#=============================================================================
 # Target rules for targets named bs2_default
 
 # Build rule for target.
@@ -232,6 +206,102 @@ pico_status_led_ws2812_pio_h: cmake_check_build_system
 pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
+
+DHT20/DHT20.o: DHT20/DHT20.c.o
+.PHONY : DHT20/DHT20.o
+
+# target to build an object file
+DHT20/DHT20.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o
+.PHONY : DHT20/DHT20.c.o
+
+DHT20/DHT20.i: DHT20/DHT20.c.i
+.PHONY : DHT20/DHT20.i
+
+# target to preprocess a source file
+DHT20/DHT20.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.i
+.PHONY : DHT20/DHT20.c.i
+
+DHT20/DHT20.s: DHT20/DHT20.c.s
+.PHONY : DHT20/DHT20.s
+
+# target to generate assembly for a file
+DHT20/DHT20.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.s
+.PHONY : DHT20/DHT20.c.s
+
+main.o: main.c.o
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.s
+.PHONY : main.c.s
+
+sgp30/driver_sgp30.o: sgp30/driver_sgp30.c.o
+.PHONY : sgp30/driver_sgp30.o
+
+# target to build an object file
+sgp30/driver_sgp30.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o
+.PHONY : sgp30/driver_sgp30.c.o
+
+sgp30/driver_sgp30.i: sgp30/driver_sgp30.c.i
+.PHONY : sgp30/driver_sgp30.i
+
+# target to preprocess a source file
+sgp30/driver_sgp30.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.i
+.PHONY : sgp30/driver_sgp30.c.i
+
+sgp30/driver_sgp30.s: sgp30/driver_sgp30.c.s
+.PHONY : sgp30/driver_sgp30.s
+
+# target to generate assembly for a file
+sgp30/driver_sgp30.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.s
+.PHONY : sgp30/driver_sgp30.c.s
+
+ssd1306/ssd1306.o: ssd1306/ssd1306.c.o
+.PHONY : ssd1306/ssd1306.o
+
+# target to build an object file
+ssd1306/ssd1306.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o
+.PHONY : ssd1306/ssd1306.c.o
+
+ssd1306/ssd1306.i: ssd1306/ssd1306.c.i
+.PHONY : ssd1306/ssd1306.i
+
+# target to preprocess a source file
+ssd1306/ssd1306.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.i
+.PHONY : ssd1306/ssd1306.c.i
+
+ssd1306/ssd1306.s: ssd1306/ssd1306.c.s
+.PHONY : ssd1306/ssd1306.s
+
+# target to generate assembly for a file
+ssd1306/ssd1306.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.s
+.PHONY : ssd1306/ssd1306.c.s
 
 usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o
@@ -2060,12 +2130,22 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pico_status_led_ws2812_pio_h"
-	@echo "... picotoolBuild"
-	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... SCTR_EstacionMeteorologica"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
+	@echo "... DHT20/DHT20.o"
+	@echo "... DHT20/DHT20.i"
+	@echo "... DHT20/DHT20.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... sgp30/driver_sgp30.o"
+	@echo "... sgp30/driver_sgp30.i"
+	@echo "... sgp30/driver_sgp30.s"
+	@echo "... ssd1306/ssd1306.o"
+	@echo "... ssd1306/ssd1306.i"
+	@echo "... ssd1306/ssd1306.s"
 	@echo "... usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
 	@echo "... usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"

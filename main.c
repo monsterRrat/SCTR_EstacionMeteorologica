@@ -9,10 +9,17 @@
 #include "hardware/gpio.h"
 /* Include driver headers */
 #include "DHT20/DHT20.h"
-#include <sgp30/driver_sgp30.h>
-#include <ssd1306/ssd1306.h>
+#include "sgp30/driver_sgp30.h"
+#include "ssd1306/ssd1306.h"
 
-/* Prototipos de funcionesS */
+/* Estructura para almacenar los datos de los sensores */
+typedef struct {
+	float temp;
+	float hum;
+	uint16_t co2;
+} datos;
+
+/* Prototipos de funciones */
 uint8_t iic_init(void);
 
 uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len);
@@ -29,13 +36,14 @@ time_t tiempoUnix(void) { return time(NULL); }
 
 static void oled_print_value(const char* label, const char* value);
 
-/* Estructura para almacenar los datos de los sensores */
-typedef struct {
-	float temp;
-	float hum;
-	uint16_t co2;
-} datos;
-
+/* Configuración del display OLED */
+struct render_area frame_area = {
+    .start_column = 0,
+    .end_column = ssd1306_width - 1,
+    .start_page = 0,
+    .end_page = ssd1306_n_pages - 1
+};
+uint8_t ssd[ssd1306_buffer_length]; // Buffer del display
 
 /*Estados del sistema*/
 enum state {
@@ -59,7 +67,7 @@ enum event {
  * en su uso.
  */
 
-static void print_temp(float temp,) {
+static void print_temp(float temp) {
     char buf[32];
     snprintf(buf, sizeof buf, "%.1f C", temp);
     oled_print_value("TEMP", buf);
@@ -122,14 +130,14 @@ enum event event_parser(int ch)
 int main(void)
 {
     /* Inicialización de estructuras de datos */
-    struct datos datos_sensores;
-    struct datos *p_datos = NULL;
+    datos datos_sensores;
+    datos *p_datos = NULL;
     p_datos = &datos_sensores;
     enum state st = TEMP; // Estado inicial
     uint16_t tvoc = 0; // Variable para necesario SGP30
 	
     /* Inicialización del bus I2C */
-    iic_init()
+    iic_init();
 
     /* Inicialización del sensor DHT20*/
     DHT20 sens_temp_hum;

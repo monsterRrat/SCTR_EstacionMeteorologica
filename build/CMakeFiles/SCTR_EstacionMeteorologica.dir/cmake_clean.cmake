@@ -1,4 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o"
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o.d"
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o"
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o.d"
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o"
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o.d"
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o"
+  "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o.d"
   "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
   "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
