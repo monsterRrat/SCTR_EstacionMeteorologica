@@ -26,7 +26,7 @@ void sgp30_delay_ms(uint32_t ms);
 
 uint16_t calculate_absolute_humidity(float temperature, float humidity);
 
-void getSensor1(datos *p_datos, DHT20 sensor);
+void get_temp_hum(datos *p_datos, DHT20 sensor);
 
 time_t tiempoUnix(void) { return time(NULL); }
 
@@ -116,19 +116,23 @@ enum event event_parser(int ch)
 
 int main(void)
 {
-    struct datos datos_sensor;
+    /* Inicialización de estructuras de datos */
+    struct datos datos_sensores;
     struct datos *p_datos = NULL;
-    p_datos = &datos_sensor;
+    p_datos = &datos_sensores;
+    enum state st = TEMP;
+    uint16_t tvoc = 0;
 	
+    /* Inicialización del bus I2C */
     i2c_init(i2c0, 400 * 1000); 
     gpio_set_function(4, GPIO_FUNC_I2C); 
     gpio_set_function(5, GPIO_FUNC_I2C); 
     gpio_pull_up(4);
     gpio_pull_up(5);
 
-  
-    DHT20 sensor;
-    int status = DHT20_init(&sensor);
+    /* Inicialización del sensor DHT20*/
+    DHT20 sens_temp_hum;
+    int status = DHT20_init(&sens_temp_hum);
 
     if (status == DHT20_OK) {
         printf("DHT20 inicializado correctamente.\n");
@@ -136,6 +140,8 @@ int main(void)
         printf("Error al inicializar DHT20: %d\n", status);
         return 1;
     }
+
+    /* Inicialización del sensor SGP30 */
     sgp30_handle_t sgp30;
     sgp30.iic_init      = 0;
     sgp30.iic_deinit    = NULL;              
@@ -145,13 +151,10 @@ int main(void)
     sgp30.debug_print   = NULL;
     sgp30_init(&sgp30);
     sgp30_iaq_init(&sgp30);
-    
-    enum state st = TEMP;
-    uint16_t tvoc = 0;
 
     for (;;) {
 
-        getSensor1(p_datos,sensor);
+        get_temp_hum(p_datos,sens_temp_hum);
         uint16_t ah = calculate_absolute_humidity(p_datos->temp, p_datos->hum);
         sgp30_set_absolute_humidity(&sgp30, ah);
         sgp30_read(&sgp30, &p_datos->co2, &tvoc);
@@ -200,7 +203,7 @@ uint16_t calculate_absolute_humidity(float temperature, float humidity)
     return (uint16_t)(AH * 256.0f);
 };
 
-void getSensor1(datos *p_datos, DHT20 sensor) {
+void get_temp_hum(datos *p_datos, DHT20 sensor) {
     updateMeasurement(&sensor);
 
     float t = getTemperature(&sensor);
