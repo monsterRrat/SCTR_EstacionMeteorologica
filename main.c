@@ -157,7 +157,6 @@ int main(void)
 
     for (;;) {
 
-        sgp30_read(&sgp30, p_datos->co2, &tvoc);
         getSensor1(p_datos,sensor);
         uint16_t ah = calculate_absolute_humidity(p_datos->temp, p_datos->hum);
         sgp30_set_absolute_humidity(&sgp30, ah);
