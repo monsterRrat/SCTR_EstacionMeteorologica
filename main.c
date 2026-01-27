@@ -1,59 +1,16 @@
+/* Include standard headers */
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
-#include <DHT20.h>
-#include <sgp30.h>
-#include <ssd1306.h>
-
-typedef struct
-{
-    uint8_t inited;
-
-    uint8_t (*iic_init)(void);
-    uint8_t (*iic_deinit)(void);
-    uint8_t (*iic_read_cmd)(uint8_t addr, uint8_t *buf, uint16_t len);
-    uint8_t (*iic_write_cmd)(uint8_t addr, uint8_t *buf, uint16_t len);
-
-    void (*delay_ms)(uint32_t ms);
-    void (*debug_print)(const char *fmt, ...);
-
-} sgp30_handle_t;
-uint8_t sgp30_iic_init(void)
-{
-    i2c_init(i2c0, 100 * 1000);
-    gpio_set_function(4, GPIO_FUNC_I2C);
-    gpio_set_function(5, GPIO_FUNC_I2C);
-    gpio_pull_up(4);
-    gpio_pull_up(5);
-    return 0;
-}
-uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
-{
-    if (i2c_write_blocking(i2c0, addr, buf, len, false) < 0)
-        return 1;
-    return 0;
-}
-uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
-{
-    if (i2c_read_blocking(i2c0, addr, buf, len, false) < 0)
-        return 1;
-    return 0;
-}
-void sgp30_delay_ms(uint32_t ms)
-{
-    sleep_ms(ms);
-};
-
-uint16_t calculate_absolute_humidity(float temperature, float humidity)
-{
-    float Es, E, AH;
-    
-    Es = 6.112f * expf((17.62f * temperature) / (243.12f + temperature));
-    E  = (humidity / 100.0f) * Es;
-    AH = (216.7f * E) / (273.15f + temperature);
-
-    return (uint16_t)(AH * 256.0f);
-};
+#include <stdint.h>
+/* Include Pico SDK headers */
+#include "pico/stdlib.h"
+#include "hardware/i2c.h"
+#include "hardware/gpio.h"
+/* Include driver headers */
+#include "DHT20/DHT20.h"
+#include <sgp30/driver_sgp30.h>
+#include <ssd1306/ssd1306.h>
 
 typedef struct {
 	float temp;
@@ -61,20 +18,21 @@ typedef struct {
 	uint16_t co2;
 } datos;
 
-void getSensor1(p_datos, sensor) {
-    updateMeasurement(&sensor);
+uint8_t sgp30_iic_init(void);
 
-    float t = getTemperature(&sensor);
-    float h = getHumidity(&sensor);
-    p_datos->temp = t
-    p_datos->hum = h
-};
+uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len);
 
-int tiempoUnix() {
-    int time_t segundos = time(NULL);
-    return segundos;
-};
+uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len);
 
+void sgp30_delay_ms(uint32_t ms);
+
+uint16_t calculate_absolute_humidity(float temperature, float humidity);
+
+void getSensor1(datos *p_datos, DHT20 sensor);
+
+time_t tiempoUnix(void) { return time(NULL); }
+
+static void oled_print_value(ssd1306_t* o, const char* label, const char* value);
 
 /*Estados del sistema*/
 enum state {
@@ -92,42 +50,59 @@ enum event {
 	EVENT_MAX
 };
 
+/* Acciones.
+ * Funciones que dan pie a la lectura de sensores
+ * Se desacoplan de los estados para tener máxima flexibilidad
+ * en su uso.
+ */
 
-void print_temp(temp, oled)
-{
-	ssd1306_draw_string(&oled, 0, 0, 1, "temp"); ;
+static void print_temp(float temp, ssd1306_t* o) {
+    char buf[32];
+    snprintf(buf, sizeof buf, "%.1f C", temp);
+    oled_print_value(o, "TEMP", buf);
+}
+static void print_hum(float hum, ssd1306_t* o) {
+    char buf[32];
+    snprintf(buf, sizeof buf, "%.1f %%", hum);
+    oled_print_value(o, "HUMEDAD", buf);
+}
+static void print_co2(uint16_t co2, ssd1306_t* o) {
+    char buf[32];
+    snprintf(buf, sizeof buf, "%u ppm", co2);
+    oled_print_value(o, "CO2", buf);
 }
 
-void print_hum(hum, oled)
-{
-	ssd1306_draw_string(&oled, 0, 0, 1, "hum"); ;
-}
-
-void print_co2(co2, oled)
-{
-	ssd1306_draw_string(&oled, 0, 0, 1, "co2"); ;
-}
 
 /* Manejador de transición (transition handler)
    Funciones asociadas a las transiciones*/
-enum state trans_temp(void)
+enum state trans_temp(datos* p, ssd1306_t* o)
 {
-	print_temp(p_datos->temp);
+	print_temp(p->temp, o);
 	return TEMP;
 }
 
-enum state trans_humedad(datos *p_datos, oled)
+enum state trans_humedad(datos *p, ssd1306_t* o)
 {
-	print_hum(p_datos->hum);
+	print_hum(p->hum, o);
 	return HUMEDAD;
 }
 
-enum state trans_co2(datos *p_datos, oled)
+enum state trans_co2(datos *p, ssd1306_t *o)
 {
-	print_hum(p_datos->co2);
+	print_co2(p->co2, o);
 	return CO2;
 }
 
+<<<<<<< HEAD
+/* Tabla de transición*/
+enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, ssd1306_t *oled) = {
+    [TEMP] = {
+        [TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
+    },
+    [HUMEDAD] = {
+        [TIEMPO] = trans_co2     /*Despues de la cte. de tiempo, pasas de hum a CO2*/
+    },
+=======
 enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
 	[TEMP] = {
 		[TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
@@ -135,9 +110,10 @@ enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
 	[HUMEDAD] = {
 		[TIEMPO] = trans_co2     /*Despues de la cte. de tiempo, pasas de hum a CO2*/
 	},
+>>>>>>> d939f533c1619ceb78c1a15eb6cc0d70d7f22843
     [CO2] = {
-		[TIEMPO] = trans_temp    /*Despues de la cte. de tiempo, pasas de CO2 a temp*/
-	},
+        [TIEMPO] = trans_temp    /*Despues de la cte. de tiempo, pasas de CO2 a temp*/
+    },
 };
 
 /* Parseador de eventos: mundo real → evento 
@@ -165,7 +141,7 @@ int main(void)
     ssd1306_t oled;
     if (!ssd1306_init(&oled, 128, 64, 0x3C, i2c0)) {
         printf("Error inicializando la pantalla!\n");
-        return 1
+        return 1;
     }
     DHT20 sensor;
     int status = DHT20_init(&sensor);
@@ -174,7 +150,7 @@ int main(void)
         printf("DHT20 inicializado correctamente.\n");
     } else {
         printf("Error al inicializar DHT20: %d\n", status);
-        return 1
+        return 1;
     }
     sgp30_handle_t sgp30;
     sgp30.iic_init      = sgp30_iic_init;
@@ -186,20 +162,19 @@ int main(void)
     sgp30_init(&sgp30);
     sgp30_iaq_init(&sgp30);
     
-	print_temp();
-	enum state st = TEMP;
+    enum state st = TEMP;
+    uint16_t tvoc = 0;
 
-	for (;;) {
+    for (;;) {
 
-        sgp30_read(&sgp30, p_datos->co2, &tvoc);
         getSensor1(p_datos,sensor);
         uint16_t ah = calculate_absolute_humidity(p_datos->temp, p_datos->hum);
         sgp30_set_absolute_humidity(&sgp30, ah);
-        sgp30_read(&sgp30, p_datos->co2, &tvoc);
+        sgp30_read(&sgp30, &p_datos->co2, &tvoc);
 
 		int ch = tiempoUnix();
 		enum event ev = event_parser(ch);
-		enum state (*tr)(datos*, oled) = trans_table[st][ev];
+		enum state (*tr)(p_datos, oled) = trans_table[st][ev];
 
 		if (tr == NULL) { 
 			printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);
@@ -209,4 +184,60 @@ int main(void)
 	}
 
 	return 0;
+}
+
+uint8_t sgp30_iic_init(void)
+{
+    i2c_init(i2c0, 100 * 1000);
+    gpio_set_function(4, GPIO_FUNC_I2C);
+    gpio_set_function(5, GPIO_FUNC_I2C);
+    gpio_pull_up(4);
+    gpio_pull_up(5);
+    return 0;
+}
+
+uint8_t sgp30_iic_write_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
+{
+    if (i2c_write_blocking(i2c0, addr, buf, len, false) < 0)
+        return 1;
+    return 0;
+}
+
+uint8_t sgp30_iic_read_cmd(uint8_t addr, uint8_t *buf, uint16_t len)
+{
+    if (i2c_read_blocking(i2c0, addr, buf, len, false) < 0)
+        return 1;
+    return 0;
+}
+
+void sgp30_delay_ms(uint32_t ms)
+{
+    sleep_ms(ms);
+};
+
+uint16_t calculate_absolute_humidity(float temperature, float humidity)
+{
+    float Es, E, AH;
+    
+    Es = 6.112f * expf((17.62f * temperature) / (243.12f + temperature));
+    E  = (humidity / 100.0f) * Es;
+    AH = (216.7f * E) / (273.15f + temperature);
+
+    return (uint16_t)(AH * 256.0f);
+};
+
+void getSensor1(datos *p_datos, DHT20 sensor) {
+    updateMeasurement(&sensor);
+
+    float t = getTemperature(&sensor);
+    float h = getHumidity(&sensor);
+    p_datos->temp = t;
+    p_datos->hum = h;
+}
+
+static void oled_print_value(ssd1306_t* o, const char* label, const char* value) {
+    ssd1306_clear(o);
+    ssd1306_draw_string(o, 0, 0, 1, label);
+    ssd1306_draw_string(o, 0, 16, 2, value);
+    ssd1306_show(o);
 }
