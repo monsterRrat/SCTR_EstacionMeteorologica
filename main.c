@@ -93,7 +93,6 @@ enum state trans_co2(datos *p, ssd1306_t *o)
 	return CO2;
 }
 
-<<<<<<< HEAD
 /* Tabla de transición*/
 enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, ssd1306_t *oled) = {
     [TEMP] = {
@@ -102,15 +101,6 @@ enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, ssd1306_t *oled)
     [HUMEDAD] = {
         [TIEMPO] = trans_co2     /*Despues de la cte. de tiempo, pasas de hum a CO2*/
     },
-=======
-enum state (*trans_table[STATE_MAX][EVENT_MAX])(datos *p_datos, oled) = {
-	[TEMP] = {
-		[TIEMPO] = trans_humedad  /*Despues de la cte. de tiempo, pasas de temp a hum*/
-	},
-	[HUMEDAD] = {
-		[TIEMPO] = trans_co2     /*Despues de la cte. de tiempo, pasas de hum a CO2*/
-	},
->>>>>>> d939f533c1619ceb78c1a15eb6cc0d70d7f22843
     [CO2] = {
         [TIEMPO] = trans_temp    /*Despues de la cte. de tiempo, pasas de CO2 a temp*/
     },
