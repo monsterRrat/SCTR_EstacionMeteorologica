@@ -19,7 +19,7 @@ add_executable(SCTR_EstacionMeteorologica
     main.c
     DHT20/DHT20.c		        # Archivo del DHT20
     ssd1306/ssd1306.c		    # Archivo del ssd1306
-    sgp30/sgp30.c		        # Archivo del sgp30
+    sgp30/driver_sgp30.c		        # Archivo del sgp30
 )
 
 # Incluir las librerías necesarias
