@@ -44,7 +44,7 @@ stateDiagram-v2
 <img src="./imagenes/pico_pinout.png" alt="Hardware Setup" width="800">
 
 | Componente | Pin Raspberry | Pin físico | Función |
-| :--- | :--- | :---: |
+| :--- | :--- | :---: | :---: |
 | **Sensor DHT20** | GP4 | Pin 6 | Linea de datos |
 | **Sensor DHT20** | GP5 | Pin 7 | Linea de reloj |
 | **Pantalla SSD1306** | GP5 | Pin 7 | Linea de reloj |
