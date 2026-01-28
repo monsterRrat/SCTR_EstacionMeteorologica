@@ -41,7 +41,11 @@ stateDiagram-v2
 ```
 ## Pin-out
 
-##
+![Pinout Raspberry Pi Pico](https://raw.githubusercontent.com/raspberrypi/documentation/master/documentation/ascii_docs/microcontrollers/raspberry-pi-pico/images/pico-pinout.png)
+
+## Funcionamiento
+
+
 
 ## Datasheets
 
