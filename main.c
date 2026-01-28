@@ -12,6 +12,9 @@
 #include "sgp30/driver_sgp30.h"
 #include "ssd1306/ssd1306.h"
 
+#define DHT20_I2C_ADDR 0x3C  // Dirección I2C del sensor DHT20
+#define I2C_PORT i2c0 // Usar I2C0
+
 /* Estructura para almacenar los datos de los sensores */
 typedef struct {
 	float temp;
