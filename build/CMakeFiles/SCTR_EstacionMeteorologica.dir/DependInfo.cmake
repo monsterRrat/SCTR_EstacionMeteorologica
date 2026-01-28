@@ -150,14 +150,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/usr/local/src/rpico/pico-sdk/src/rp2040/boot_stage2/include"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/include"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o.d"
-  "/home/alejandro/SCTR_EstacionMeteorologica/main.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o.d"
-  "/home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o.d"
+  "/home/alejandro/SCTR_EstacionMeteorologica/main5.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.o.d"
   "/home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d"
@@ -188,7 +186,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o.d"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d"

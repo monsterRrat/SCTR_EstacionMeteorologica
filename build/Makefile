@@ -231,53 +231,29 @@ DHT20/DHT20.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.s
 .PHONY : DHT20/DHT20.c.s
 
-main.o: main.c.o
-.PHONY : main.o
+main5.o: main5.c.o
+.PHONY : main5.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o
-.PHONY : main.c.o
+main5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.o
+.PHONY : main5.c.o
 
-main.i: main.c.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.s
-.PHONY : main.c.s
-
-sgp30/driver_sgp30.o: sgp30/driver_sgp30.c.o
-.PHONY : sgp30/driver_sgp30.o
-
-# target to build an object file
-sgp30/driver_sgp30.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o
-.PHONY : sgp30/driver_sgp30.c.o
-
-sgp30/driver_sgp30.i: sgp30/driver_sgp30.c.i
-.PHONY : sgp30/driver_sgp30.i
+main5.i: main5.c.i
+.PHONY : main5.i
 
 # target to preprocess a source file
-sgp30/driver_sgp30.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.i
-.PHONY : sgp30/driver_sgp30.c.i
+main5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.i
+.PHONY : main5.c.i
 
-sgp30/driver_sgp30.s: sgp30/driver_sgp30.c.s
-.PHONY : sgp30/driver_sgp30.s
+main5.s: main5.c.s
+.PHONY : main5.s
 
 # target to generate assembly for a file
-sgp30/driver_sgp30.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.s
-.PHONY : sgp30/driver_sgp30.c.s
+main5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.s
+.PHONY : main5.c.s
 
 ssd1306/ssd1306.o: ssd1306/ssd1306.c.o
 .PHONY : ssd1306/ssd1306.o
@@ -998,30 +974,6 @@ usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.s: usr/local/src/
 usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.s
-
-usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.o: usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-.PHONY : usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.o
-
-# target to build an object file
-usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-.PHONY : usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-
-usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.i: usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.i
-
-# target to preprocess a source file
-usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-
-usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.s: usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.s
-
-# target to generate assembly for a file
-usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCTR_EstacionMeteorologica.dir/build.make CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
@@ -2137,12 +2089,9 @@ help:
 	@echo "... DHT20/DHT20.o"
 	@echo "... DHT20/DHT20.i"
 	@echo "... DHT20/DHT20.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... sgp30/driver_sgp30.o"
-	@echo "... sgp30/driver_sgp30.i"
-	@echo "... sgp30/driver_sgp30.s"
+	@echo "... main5.o"
+	@echo "... main5.i"
+	@echo "... main5.s"
 	@echo "... ssd1306/ssd1306.o"
 	@echo "... ssd1306/ssd1306.i"
 	@echo "... ssd1306/ssd1306.s"
@@ -2233,9 +2182,6 @@ help:
 	@echo "... usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.o"
 	@echo "... usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.i"
 	@echo "... usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.s"
-	@echo "... usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.o"
-	@echo "... usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
-	@echo "... usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
 	@echo "... usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
 	@echo "... usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"

@@ -1,5 +1,5 @@
-CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o: \
- /home/alejandro/SCTR_EstacionMeteorologica/main.c \
+CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.o: \
+ /home/alejandro/SCTR_EstacionMeteorologica/main5.c \
  /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -10,16 +10,9 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o: \
  /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/stdio.h \
- /usr/include/newlib/time.h /usr/include/newlib/machine/time.h \
- /usr/include/newlib/sys/types.h /usr/include/newlib/sys/_stdint.h \
- /usr/include/newlib/machine/endian.h \
- /usr/include/newlib/machine/_endian.h /usr/include/newlib/sys/select.h \
- /usr/include/newlib/sys/_sigset.h /usr/include/newlib/sys/_timeval.h \
- /usr/include/newlib/sys/timespec.h /usr/include/newlib/sys/_timespec.h \
- /usr/include/newlib/sys/_pthreadtypes.h /usr/include/newlib/sys/sched.h \
- /usr/include/newlib/machine/types.h /usr/include/newlib/sys/_locale.h \
- /usr/include/newlib/math.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+ /usr/include/newlib/string.h /usr/include/newlib/sys/_locale.h \
+ /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
@@ -74,9 +67,6 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o: \
  /usr/local/src/rpico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
  /home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.h \
  /usr/include/newlib/stdlib.h /usr/include/newlib/machine/stdlib.h \
- /usr/include/newlib/alloca.h /usr/include/newlib/string.h \
- /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
- /usr/include/newlib/inttypes.h /usr/include/newlib/sys/_intsup.h \
- /home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.h \
- /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.h \
- /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/i2c.h
+ /usr/include/newlib/alloca.h /usr/include/newlib/inttypes.h \
+ /usr/include/newlib/sys/_intsup.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.h
