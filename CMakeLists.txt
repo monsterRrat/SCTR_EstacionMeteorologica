@@ -14,12 +14,13 @@ pico_sdk_init()
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
+set(PICO_BOARD pico_w)
+
 # Añadir los archivos fuente del proyecto
 add_executable(SCTR_EstacionMeteorologica
-    main.c
+    main5.c
     DHT20/DHT20.c		        # Archivo del DHT20
     ssd1306/ssd1306.c		    # Archivo del ssd1306
-    sgp30/driver_sgp30.c		        # Archivo del sgp30
 )
 
 # Incluir las librerías necesarias
@@ -33,7 +34,6 @@ target_include_directories(SCTR_EstacionMeteorologica PRIVATE
 target_link_libraries(SCTR_EstacionMeteorologica
     pico_stdlib
     hardware_i2c
-    hardware_adc
 )
 
 # Enable USB output, disable UART

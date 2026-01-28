@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+  "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -87,9 +87,9 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "/home/efime/SCTR_EstacionMeteorologica/DHT20"
-  "/home/efime/SCTR_EstacionMeteorologica/ssd1306"
-  "/home/efime/SCTR_EstacionMeteorologica/sgp30"
+  "/home/alejandro/SCTR_EstacionMeteorologica/DHT20"
+  "/home/alejandro/SCTR_EstacionMeteorologica/ssd1306"
+  "/home/alejandro/SCTR_EstacionMeteorologica/sgp30"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/include"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src"
   "/usr/local/src/rpico/pico-sdk/src/common/pico_stdlib_headers/include"
@@ -150,15 +150,13 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/usr/local/src/rpico/pico-sdk/src/rp2040/boot_stage2/include"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/include"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o.d"
-  "/home/efime/SCTR_EstacionMeteorologica/main.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o.d"
-  "/home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o.d"
-  "/home/efime/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o.d"
+  "/home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o.d"
+  "/home/alejandro/SCTR_EstacionMeteorologica/main5.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/main5.c.o.d"
+  "/home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d"
   "/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d"
@@ -188,7 +186,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o.d"
-  "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d"
   "/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" "gcc" "CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d"

@@ -1,5 +1,5 @@
 CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o: \
- /home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.c \
+ /home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.c \
  /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -11,7 +11,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o: \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/_locale.h \
  /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
- /home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
@@ -19,9 +19,9 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o: \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
  /usr/include/newlib/assert.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
- /home/efime/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/version.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/version.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
- /home/efime/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/config_autogen.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/src/rpico/pico-sdk/src/boards/include/boards/pico.h \
  /usr/local/src/rpico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/include/pico/platform.h \

@@ -16,9 +16,9 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
  /usr/include/newlib/assert.h \
- /home/efime/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/version.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/version.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
- /home/efime/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/config_autogen.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/src/rpico/pico-sdk/src/boards/include/boards/pico.h \
  /usr/local/src/rpico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/include/pico/platform.h \
