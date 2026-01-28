@@ -41,11 +41,11 @@ stateDiagram-v2
 ```
 ## Pin-out
 
-![Pinout Raspberry Pi Pico](./imagenes/pico_pinout.png)
+<img src="./imagenes/pico_pinout.png" alt="Hardware Setup" width="400">
 
 ## Circuito físico
 
-![Circuito fisico](./imagenes/montaje.jpeg)
+<img src="./imagenes/montaje.jpeg" alt="Hardware Setup" width="400">
 
 ## Funcionamiento
 
