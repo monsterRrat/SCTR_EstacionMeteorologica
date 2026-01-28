@@ -2,40 +2,36 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
-
 /* Include Pico SDK headers */
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
 #include "hardware/gpio.h"
-
 /* Drivers */
 #define I2C_INST i2c0
 #include "DHT20/DHT20.h"
 #include "ssd1306.h"
 
-/* =========================
-   I2C config (DHT20 + OLED)
-   ========================= */
+/*Configuración del i2c para los perifericos*/
 #define I2C_PORT       i2c0
 #define I2C_SDA_PIN    4
 #define I2C_SCL_PIN    5
 #define I2C_BAUDRATE   (400 * 1000)
 
-   /* Direcciones típicas OLED */
+/* Direcciones típicas OLED */
 #define OLED_ADDR      0x3C
 
-/* Periodos */
+/* Periodos sensor y FSM */
 #define DHT20_SAMPLE_PERIOD_MS  1500u
 #define FSM_PERIOD_MS           5000u
 
+/* Estructura para almacenar datos
+adquiridos del sensor DHT20 */
 typedef struct {
     float temp;
     float hum;
 } datos;
 
-/* =========================
-   FSM
-   ========================= */
+/*Enums estados y transiciones*/
 enum state {
     TEMP = 0,
     HUMEDAD,
@@ -48,6 +44,7 @@ enum event {
     EVENT_MAX
 };
 
+/*Event parser*/
 static uint32_t last_slot = 0;
 
 static enum event event_parser_ms(uint32_t ms_now)
@@ -60,18 +57,15 @@ static enum event event_parser_ms(uint32_t ms_now)
     return NONE;
 }
 
-/* =========================
-   Prototipos
-   ========================= */
+/* Prototipos */
 static uint8_t iic_init(void);
+
 static void get_temp_hum(datos* p_datos, DHT20* sensor);
 
 static void oled_show_temp(ssd1306_t* oled, float t);
 static void oled_show_hum(ssd1306_t* oled, float h);
 
-/* =========================
-   Acciones: consola
-   ========================= */
+/*Acciones*/
 static void print_temp(float temp) {
     printf("TEMP: %.2f C\n", temp);
 }
@@ -79,9 +73,7 @@ static void print_hum(float hum) {
     printf("HUMEDAD: %.2f %%\n", hum);
 }
 
-/* =========================
-   Transition handlers
-   ========================= */
+/* Transiciones */
 static enum state trans_temp(datos* p)
 {
     print_temp(p->temp);
@@ -104,9 +96,7 @@ static enum state(*trans_table[STATE_MAX][EVENT_MAX])(datos* p_datos) = {
     },
 };
 
-/* =========================
-   main
-   ========================= */
+/*MAIN*/
 int main(void)
 {
     stdio_init_all();
@@ -186,9 +176,7 @@ int main(void)
     // return 0;
 }
 
-/* =========================
-   I2C init
-   ========================= */
+/*Funcion de inicialización del I2C*/
 static uint8_t iic_init(void)
 {
     i2c_init(I2C_PORT, I2C_BAUDRATE);
@@ -201,9 +189,7 @@ static uint8_t iic_init(void)
     return 0;
 }
 
-/* =========================
-   DHT20 read
-   ========================= */
+/* Funcion para adquisicon de datos DHT20 */
 static void get_temp_hum(datos* p_datos, DHT20* sensor)
 {
     int st = getMeasurement(sensor);
@@ -220,9 +206,7 @@ static void get_temp_hum(datos* p_datos, DHT20* sensor)
     }
 }
 
-/* =========================
-   OLED helpers (driver nuevo)
-   ========================= */
+/*Funciones de visualizacion en OLED*/
 static void oled_show_temp(ssd1306_t* oled, float t)
 {
     char line[24];
