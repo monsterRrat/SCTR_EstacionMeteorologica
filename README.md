@@ -1,14 +1,13 @@
 # Estacion meteorológica
 
-Este proyecto consiste en una estación meteorológica compacta diseñada para medir y mostrar en tiempo real tres parámetros ambientales fundamentales:
+Este proyecto consiste en una estación meteorológica compacta diseñada para medir y mostrar en tiempo real dos parámetros ambientales fundamentales:
 - Temperatura
 - Humedad relativa
-- Concentración de CO₂
 
 La estación realiza lecturas en intervalos de tiempo de 5 segundos y muestra los valores obtenidos en una pantalla integrada, lo que permite visualizar el estado del ambiente de forma rápida y sencilla.
 
 Las características principales de este proyecto son:
-- Lectura periódica de temperatura, humedad y CO₂.
+- Lectura periódica de temperatura, humedad.
 - Intervalos de medición ajustables.
 - Visualización clara de los datos en una pantalla.
 - Código modular y fácil de extender.
@@ -18,17 +17,16 @@ Las características principales de este proyecto son:
 
 Este es un proyecto basado en una Raspberry Pi Pico (RP2040), un microcontrolador con 2MB de memoria con acceso wifi y que a mayores cuenta con los siguientes periféricos:
 - **Sensor DHT20:** un sensor para tomar medidas de humedad y temperatura
-- **Sensor SGP30:** un sensor para tomar medias de calidad de aire y cantidad de CO₂ en el ambiente
 - **Pantalla SSD1306:** un controlador CMOS de un solo chip diseñado para gestionar paneles de matriz de puntos OLED/PLED
 
 A la hora de programar y conectar estos elementos de hardware, nos basamos en sus datasheets correspondientes y en librerías de código abierto.
 
 ## Usos del proyecto  
 
-Este proyecto podría ser util en ambientes en los que mantener estos tres parámetros estables y conocidos en todo momento es necesario. Por ejemplo:
+Este proyecto podría ser util en ambientes en los que mantener estos dos parámetros estables y conocidos en todo momento es necesario. Por ejemplo:
 
 - **Invernaderos:** para mantener controlados los parámetros en las medidas óptimas para el crecimiento de las plantas
-- **Museos:** para controlar valores elevados de humedad o CO₂ que pueden poner en peligro la conservación de las obras de arte.
+- **Museos:** especialmente para controlar valores elevados de humedad que pueden poner en peligro la conservación de las obras de arte.
 
 ## Máquina de estados
 
@@ -38,24 +36,19 @@ Este proyecto sigue la siguiente máquina de estados para controlar su comportam
 stateDiagram-v2
     direction TB
     [*] --> Temperatura
-    Temperatura --> Humedad : tiempo
-    Humedad --> CO₂ : tiempo
-    CO₂ --> Temperatura : tiempo
+    Temperatura --> Humedad : Tiempo
+    Humedad --> Temperatura : Tiempo
 ```
+## Pin-out
+
+##
+
 ## Datasheets
 
 Enlaces a las datasheets en las que nos basamos:
 - Raspberry Pi Pico: https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008312-DS-1-pico-w-datasheet.pdf?disposition=inline
 - **Sensor DHT20:** https://cdn.sparkfun.com/assets/8/a/1/5/0/DHT20.pdf
-- **Sensor SGP30:** https://sensirion.com/media/documents/984E0DD5/61644B8B/Sensirion_Gas_Sensors_Datasheet_SGP30.pdf
 - **Pantalla SSD1306:** https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
-
-## Autores de los drivers
-
-Crédito a los autores originales de los drivers de códgio libre en los que nos basamos a la hora de programar los periféricos:
-- **Sensor DHT20:**
-- **Sensor SGP30:** Shifeng Li
-- **Pantalla SSD1306:**
 
 ## Integrantes del equipo
 - Montserrat Redondo
