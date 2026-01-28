@@ -16,9 +16,9 @@ Las características principales de este proyecto son:
 
 ## Hardware
 
-Este es un proyecto basado en una Raspberry Pi Pico (RP2040), un microcontrolador con 2MB de memoria sin acceso wifi y que a mayores cuenta con los siguientes periféricos:
+Este es un proyecto basado en una Raspberry Pi Pico (RP2040), un microcontrolador con 2MB de memoria con acceso wifi y que a mayores cuenta con los siguientes periféricos:
 - **Sensor DHT20:** un sensor para tomar medidas de humedad y temperatura
-- **Sensor SPG30:** un sensor para tomar medias de calidad de aire y cantidad de CO₂ en el ambiente
+- **Sensor SGP30:** un sensor para tomar medias de calidad de aire y cantidad de CO₂ en el ambiente
 - **Pantalla SSD1306:** un controlador CMOS de un solo chip diseñado para gestionar paneles de matriz de puntos OLED/PLED
 
 A la hora de programar y conectar estos elementos de hardware, nos basamos en sus datasheets correspondientes y en librerías de código abierto.
@@ -42,3 +42,31 @@ stateDiagram-v2
     Humedad --> CO₂ : tiempo
     CO₂ --> Temperatura : tiempo
 ```
+## Datasheets
+
+Enlaces a las datasheets en las que nos basamos:
+- Raspberry Pi Pico: https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008312-DS-1-pico-w-datasheet.pdf?disposition=inline
+- **Sensor DHT20:** https://cdn.sparkfun.com/assets/8/a/1/5/0/DHT20.pdf
+- **Sensor SGP30:** https://sensirion.com/media/documents/984E0DD5/61644B8B/Sensirion_Gas_Sensors_Datasheet_SGP30.pdf
+- **Pantalla SSD1306:** https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
+
+## Autores de los drivers
+
+Crédito a los autores originales de los drivers de códgio libre en los que nos basamos a la hora de programar los periféricos:
+- **Sensor DHT20:**
+- **Sensor SGP30:** Shifeng Li
+- **Pantalla SSD1306:**
+
+## Integrantes del equipo
+- Montserrat Redondo
+    - Rol: Lider de integración
+    - Funciones: coordinar el trabajo, controlar versiones y commits...
+- Ángela Bretal 
+    - Rol: Responsable de validación y documentación
+    - Funciones: diseñar pruebas funcionales, redactar informe técnico...
+- Xabier Alonso 
+    - Rol: responsable de software y tiempo
+    - Funciones: diseñar arquitectura software, asegurar modularidad...
+- Alejandro Cabada 
+    - Rol: Responsable de hardware y señales
+    - Funciones: montar el circuito en la protoboard, documentar las conexiones...
