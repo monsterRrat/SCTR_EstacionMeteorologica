@@ -71,16 +71,19 @@ static void print_temp(float temp) {
     char buf[32];
     snprintf(buf, sizeof buf, "%.1f C", temp);
     oled_print_value("TEMP", buf);
+    printf("Valor de la temperatura: %.2f\n", temp);
 }
 static void print_hum(float hum) {
     char buf[32];
     snprintf(buf, sizeof buf, "%.1f %%", hum);
     oled_print_value("HUMEDAD", buf);
+    printf("Valor de la humedad: %.2f\n", hum);
 }
 static void print_co2(uint16_t co2) {
     char buf[32];
     snprintf(buf, sizeof buf, "%u ppm", co2);
     oled_print_value("CO2", buf);
+    printf("Valor de CO2: %u\n", co2);
 }
 
 
@@ -170,7 +173,7 @@ int main(void)
 
 		int ch = tiempoUnix();
 		enum event ev = event_parser(ch);
-		enum state (*tr)(p_datos, oled) = trans_table[st][ev];
+		enum state (*tr)(p_datos) = trans_table[st][ev];
 
 		if (tr == NULL) { 
 			printf("Transicion no definida (st=%d, ev=%d)\n", st, ev);

@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/usr/local/src/rpico/pico-sdk/tools/pioasm"
-  "/home/efime/SCTR_EstacionMeteorologica/build/pioasm"
-  "/home/efime/SCTR_EstacionMeteorologica/build/pioasm-install"
-  "/home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
-  "/home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
-  "/home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
-  "/home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
+  "/home/alejandro/SCTR_EstacionMeteorologica/build/pioasm"
+  "/home/alejandro/SCTR_EstacionMeteorologica/build/pioasm-install"
+  "/home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
+  "/home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
+  "/home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
+  "/home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp${cfgdir}") # cfgdir has leading slash
 endif()

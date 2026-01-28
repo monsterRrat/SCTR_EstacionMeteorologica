@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/efime/SCTR_EstacionMeteorologica
+CMAKE_SOURCE_DIR = /home/alejandro/SCTR_EstacionMeteorologica
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/efime/SCTR_EstacionMeteorologica/build
+CMAKE_BINARY_DIR = /home/alejandro/SCTR_EstacionMeteorologica/build
 
 # Utility rule file for pico_status_led_ws2812_pio_h.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws281
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h: pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
 
 pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ws2812.pio.h"
-	cd /home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led && ../../../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio /home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ws2812.pio.h"
+	cd /home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led && ../../../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio /home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
 
 pico_status_led_ws2812_pio_h: pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h
 pico_status_led_ws2812_pio_h: pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/clean:
-	cd /home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led && $(CMAKE_COMMAND) -P CMakeFiles/pico_status_led_ws2812_pio_h.dir/cmake_clean.cmake
+	cd /home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led && $(CMAKE_COMMAND) -P CMakeFiles/pico_status_led_ws2812_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/depend:
-	cd /home/efime/SCTR_EstacionMeteorologica/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efime/SCTR_EstacionMeteorologica /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_status_led /home/efime/SCTR_EstacionMeteorologica/build /home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led /home/efime/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alejandro/SCTR_EstacionMeteorologica/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alejandro/SCTR_EstacionMeteorologica /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_status_led /home/alejandro/SCTR_EstacionMeteorologica/build /home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led /home/alejandro/SCTR_EstacionMeteorologica/build/pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/depend
 

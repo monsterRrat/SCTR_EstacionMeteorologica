@@ -14,6 +14,8 @@ pico_sdk_init()
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
+set(PICO_BOARD pico_w)
+
 # Añadir los archivos fuente del proyecto
 add_executable(SCTR_EstacionMeteorologica
     main.c

@@ -1,6 +1,6 @@
 CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o: \
- /home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c \
- /home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c \
+ /home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.h \
  /usr/include/newlib/math.h /usr/include/newlib/sys/reent.h \
  /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h \
  /usr/include/newlib/_newlib_version.h /usr/include/newlib/sys/config.h \

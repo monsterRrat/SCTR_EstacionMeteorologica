@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/efime/SCTR_EstacionMeteorologica
+CMAKE_SOURCE_DIR = /home/alejandro/SCTR_EstacionMeteorologica
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/efime/SCTR_EstacionMeteorologica/build
+CMAKE_BINARY_DIR = /home/alejandro/SCTR_EstacionMeteorologica/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SCTR_EstacionMeteorologica.dir/depend.make
@@ -70,65 +70,65 @@ include CMakeFiles/SCTR_EstacionMeteorologica.dir/progress.make
 include CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
-CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o: /home/efime/SCTR_EstacionMeteorologica/main.c
+CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o: /home/alejandro/SCTR_EstacionMeteorologica/main.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o -c /home/efime/SCTR_EstacionMeteorologica/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.o -c /home/alejandro/SCTR_EstacionMeteorologica/main.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/efime/SCTR_EstacionMeteorologica/main.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejandro/SCTR_EstacionMeteorologica/main.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.i
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/efime/SCTR_EstacionMeteorologica/main.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejandro/SCTR_EstacionMeteorologica/main.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/main.c.s
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
-CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o: /home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.c
+CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o: /home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o -c /home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.o -c /home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.i
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/efime/SCTR_EstacionMeteorologica/DHT20/DHT20.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejandro/SCTR_EstacionMeteorologica/DHT20/DHT20.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/DHT20/DHT20.c.s
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
-CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o: /home/efime/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c
+CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o: /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o -c /home/efime/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o -c /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/efime/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.i
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/efime/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.s
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
-CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o: /home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c
+CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o: /home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o -c /home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.o -c /home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c > CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.i
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/efime/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejandro/SCTR_EstacionMeteorologica/sgp30/driver_sgp30.c -o CMakeFiles/SCTR_EstacionMeteorologica.dir/sgp30/driver_sgp30.c.s
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -142,7 +142,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -156,7 +156,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o: /usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -170,7 +170,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp204
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
@@ -184,7 +184,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -198,7 +198,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o: /usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.o -c /usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/hardware_claim/claim.c.i: cmake_force
@@ -212,7 +212,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -226,7 +226,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -240,7 +240,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -253,7 +253,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -267,7 +267,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -281,7 +281,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -295,7 +295,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -309,7 +309,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -323,7 +323,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -337,7 +337,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -351,7 +351,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -365,7 +365,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -379,7 +379,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -393,7 +393,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o: /usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.o -c /usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -407,7 +407,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/commo
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -421,7 +421,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -435,7 +435,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -449,7 +449,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -463,7 +463,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -477,7 +477,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -491,7 +491,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -505,7 +505,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -519,7 +519,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -533,7 +533,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -547,7 +547,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -560,7 +560,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -574,7 +574,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -588,7 +588,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -602,7 +602,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -616,7 +616,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -629,7 +629,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -642,7 +642,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
@@ -655,7 +655,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
@@ -669,7 +669,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -683,7 +683,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -696,7 +696,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
@@ -709,7 +709,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -722,7 +722,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
@@ -736,7 +736,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -750,7 +750,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -763,7 +763,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
@@ -777,7 +777,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -790,7 +790,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -804,7 +804,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -818,7 +818,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -832,7 +832,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -846,7 +846,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -859,7 +859,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o   -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
@@ -873,7 +873,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -887,7 +887,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -901,7 +901,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -915,7 +915,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -929,7 +929,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -943,7 +943,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -957,7 +957,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -971,7 +971,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -985,7 +985,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -999,7 +999,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -1013,7 +1013,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -1027,7 +1027,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -1041,7 +1041,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1055,7 +1055,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1069,7 +1069,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1083,7 +1083,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1097,7 +1097,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1111,7 +1111,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1125,7 +1125,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -1139,7 +1139,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1153,7 +1153,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1167,7 +1167,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1181,7 +1181,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1195,7 +1195,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1209,7 +1209,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1223,7 +1223,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1237,7 +1237,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/lib/tinyu
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1251,7 +1251,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1265,7 +1265,7 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/flags.make
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o: /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o: CMakeFiles/SCTR_EstacionMeteorologica.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o -MF CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o.d -o CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o -c /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
@@ -1460,13 +1460,13 @@ SCTR_EstacionMeteorologica.elf: CMakeFiles/SCTR_EstacionMeteorologica.dir/build.
 SCTR_EstacionMeteorologica.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 SCTR_EstacionMeteorologica.elf: /usr/local/src/rpico/pico-sdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 SCTR_EstacionMeteorologica.elf: CMakeFiles/SCTR_EstacionMeteorologica.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking CXX executable SCTR_EstacionMeteorologica.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking CXX executable SCTR_EstacionMeteorologica.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SCTR_EstacionMeteorologica.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/arm-none-eabi-objdump -h /home/efime/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf > SCTR_EstacionMeteorologica.dis
-	/usr/bin/arm-none-eabi-objdump -d /home/efime/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf >> SCTR_EstacionMeteorologica.dis
-	/usr/bin/arm-none-eabi-objcopy -Oihex /home/efime/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf SCTR_EstacionMeteorologica.hex
-	/usr/bin/arm-none-eabi-objcopy -Obinary /home/efime/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf SCTR_EstacionMeteorologica.bin
-	_deps/picotool/picotool uf2 convert --quiet /home/efime/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf SCTR_EstacionMeteorologica.uf2 --family rp2040
+	/usr/bin/arm-none-eabi-objdump -h /home/alejandro/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf > SCTR_EstacionMeteorologica.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/alejandro/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf >> SCTR_EstacionMeteorologica.dis
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/alejandro/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf SCTR_EstacionMeteorologica.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/alejandro/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf SCTR_EstacionMeteorologica.bin
+	/usr/local/bin/picotool uf2 convert --quiet /home/alejandro/SCTR_EstacionMeteorologica/build/SCTR_EstacionMeteorologica.elf SCTR_EstacionMeteorologica.uf2 --family rp2040
 
 # Rule to build all files generated by this target.
 CMakeFiles/SCTR_EstacionMeteorologica.dir/build: SCTR_EstacionMeteorologica.elf
@@ -1477,6 +1477,6 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/clean:
 .PHONY : CMakeFiles/SCTR_EstacionMeteorologica.dir/clean
 
 CMakeFiles/SCTR_EstacionMeteorologica.dir/depend:
-	cd /home/efime/SCTR_EstacionMeteorologica/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efime/SCTR_EstacionMeteorologica /home/efime/SCTR_EstacionMeteorologica /home/efime/SCTR_EstacionMeteorologica/build /home/efime/SCTR_EstacionMeteorologica/build /home/efime/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alejandro/SCTR_EstacionMeteorologica/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alejandro/SCTR_EstacionMeteorologica /home/alejandro/SCTR_EstacionMeteorologica /home/alejandro/SCTR_EstacionMeteorologica/build /home/alejandro/SCTR_EstacionMeteorologica/build /home/alejandro/SCTR_EstacionMeteorologica/build/CMakeFiles/SCTR_EstacionMeteorologica.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/SCTR_EstacionMeteorologica.dir/depend
 

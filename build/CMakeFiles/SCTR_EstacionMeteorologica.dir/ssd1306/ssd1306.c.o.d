@@ -1,5 +1,5 @@
 CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o: \
- /home/efime/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c \
+ /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/ssd1306.c \
  /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -21,9 +21,9 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o: \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
  /usr/include/newlib/assert.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
- /home/efime/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/version.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/version.h \
  /usr/local/src/rpico/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
- /home/efime/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/config_autogen.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/src/rpico/pico-sdk/src/boards/include/boards/pico.h \
  /usr/local/src/rpico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/src/rpico/pico-sdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -71,5 +71,5 @@ CMakeFiles/SCTR_EstacionMeteorologica.dir/ssd1306/ssd1306.c.o: \
  /usr/local/src/rpico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
  /usr/local/src/rpico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
  /usr/local/src/rpico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
- /home/efime/SCTR_EstacionMeteorologica/ssd1306/font.h \
- /home/efime/SCTR_EstacionMeteorologica/ssd1306/i2c.h
+ /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/font.h \
+ /home/alejandro/SCTR_EstacionMeteorologica/ssd1306/i2c.h
