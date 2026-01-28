@@ -45,18 +45,17 @@ stateDiagram-v2
 
 | Componente | Pin Raspberry | Pin físico | Función |
 | :--- | :--- | :---: | :---: |
+| **Ground** | GND | Pin 3 y 38 | Conexión a tierra|
+| **Alimentación** | 3V3 | Pin 36 | Salida de 3.3V para sensores |
 | **Sensor DHT20** | GP4 | Pin 6 | Linea de datos |
 | **Sensor DHT20** | GP5 | Pin 7 | Linea de reloj |
 | **Pantalla SSD1306** | GP5 | Pin 7 | Linea de reloj |
 | **Pantalla SSD1306** | GP4 | Pin 6 | Linea de datos |
 
+
 ## Circuito físico
 
 <img src="./imagenes/montaje.jpeg" alt="Hardware Setup" width="400">
-
-## Funcionamiento
-
-
 
 ## Datasheets
 
